@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "@fontsource/poppins";
+import logo from "../src/assets/images/ccLogo.svg";
+import "./App.css";
+import { BrowserRouter as Router } from "react-router-dom";
+import Layout from "./pages/layout";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <HelmetProvider>
+    //   <AnimatedCursor color='94, 237, 207'/>
+    <Router>
+      {" "}
+      <div className="App">
+        <Layout />
+      </div>
+    </Router>
+    //   <Helmet>
+    //     <link
+    //       href="https://db.onlinewebfonts.com/c/d19798a98d1f60a49dd4a443743af41b?family=Nyx"
+    //       rel="stylesheet"
+    //     />
+    //   </Helmet>
+    // </HelmetProvider>
   );
 }
 
