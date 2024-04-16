@@ -1,0 +1,66 @@
+#gradientContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff; /* Set text color to white for better visibility */
+    background-color: var(--cc-primary-color); /* Set your primary color directly as the background */
+}
+
+
+.iconContainer {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    height: 50%;
+    text-align: center;
+    color: var(--text-color-main);
+    overflow: hidden;
+  }
+
+  .iconsContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  
+  .icons{
+    font-size: 20px;
+    transition: fill 0.3s;
+  }
+
+  .icons:hover {
+    fill: var(--secondary-color)
+  }
+
+  .logoContainer {
+    position: fixed;
+    top: 3%;
+    left: 4%;
+  }
+
+  .logoContainer img{
+   width: 55px;
+  }
+
+
+  .verticalLine {
+    margin-top: 15px;
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    border-left: 2px solid #fff; /* Adjust the color and width of the line */
+    height: 100%;
+  }
+
+  .verticalText {
+    font-size: 150px;
+    position: fixed;
+    right: 0;
+    /* transform-origin: top right; */
+    transform: translate(-50%, -50%) rotate(90deg);
+    white-space: nowrap;
+    font-family: 'Nyx';
+  }

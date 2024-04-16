@@ -1,0 +1,60 @@
+.container {
+    position: absolute;
+    left: 15%;
+    top: 15%;
+  }
+  
+  .aboutContainer {
+    max-height: 80vh; 
+    overflow-y: auto;
+  }
+  
+  .sectionOne {
+    margin-top:10%;
+    height: 2%;
+    row-gap: 10px;
+  
+  }
+  
+  .textTypeOne {
+    font-family: "Poppins";
+    color: var(--cc-secondary-color);
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .textTypeTwo {
+    margin-top: -1%;
+    font-weight: 700;
+    font-size: 50px;
+  }
+  
+  .textTypeThree {
+    margin-top: -1%;
+    width: 50%;
+    font-size: 20px;
+    color: var(--text-color-secondary);
+  }
+  
+  .mainButton {
+    margin-top: 2%;
+    border: 2px solid var(--cc-secondary-color);
+    background-color: transparent;
+    color: var(--secondary-color);
+    border-radius: 6px;
+    width: 25%;
+    padding: 1%;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  @keyframes glow {
+    0% { box-shadow: 0 0 10px var(--cc-secondary-color); }
+    50% { box-shadow: 0 0 20px var(--cc-secondary-color); }
+    100% { box-shadow: 0 0 10px var(--cc-secondary-color); }
+  }
+  
+  .mainButton:hover {
+    animation: glow 1s infinite alternate; 
+  }
