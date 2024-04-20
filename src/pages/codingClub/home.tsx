@@ -46,6 +46,8 @@ export default function CCHome() {
   return (
     <div className="container">
       <SectionOne />
+      <SectionOne />
+      <SectionOne />
       {/* <SectionTwo /> */}
     </div>
   );

@@ -36,13 +36,13 @@
   }
 
   .logoContainer {
-    position: fixed;
-    top: 3%;
+    position: absolute;
+    top: 4%;
     left: 4%;
   }
 
   .logoContainer img{
-   width: 55px;
+   width: 65px;
   }
 
 

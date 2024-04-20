@@ -1,30 +1,32 @@
 .navbarContainer {
-    top: 3%;
-    right: 20%;
-    display: flex;
-    column-gap: 20%;
-    position: fixed;
-    color: var(--text-color-main);
+  height: 2vh;
+  top: 3%;
+  right: 20%;
+  display: flex;
+  column-gap: 20%;
+  position: absolute;
+  color: var(--text-main-color);
+  z-index: 0;
 }
 
 .menuItem {
-    top: 3%;
-    text-decoration: none;
-    cursor: pointer;
-    font-family: 'Poppins';
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--text-color-main);
-    transition: text-decoration 0.3s ease;
+  top: 3%;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-main-color);
+  transition: text-decoration 0.3s ease;
 }
 
-.chosenMenuItem { 
-    color: var(--cc-secondary-color);
-    font-weight: 700;
+.chosenMenuItem {
+  color: var(--cc-secondary-color);
+  font-weight: 700;
 }
 
 .navbarContainer a.menuItem,
 .navbarContainer a.chosenMenuItem {
-    color: inherit !important;
-    text-decoration: none !important;
+  color: inherit !important;
+  text-decoration: none !important;
 }
